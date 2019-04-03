@@ -3,10 +3,13 @@
   <head>
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>CSS1</title>
+   <title>CSS2</title>
    <style>
+   .container{width:100%;
+   
+   }
      .one{
-	 z-index:-1;
+	 
 	 position:relative;
 	 
 	 }
@@ -17,9 +20,9 @@
 		 bottom:35px;
 		 }
     .art{
-	float: left;
+	float:left;
 	background-color:#FFFF66;
-	width:60%;
+	width:69.5%;
 	height:500px;
 	}
 	
@@ -30,25 +33,37 @@
 	          color:#993300;
 	        }
 	 .asc{
-	 float:right;
+	 float:left;
 	border-left:2px dashed brown;
 	background-color:#FF9933 ;
-	width:38%;
+	width:30%;
 	height:500px;
 	position:relative;
 	}
+	.seealso{
+	width:90%;
+	position:absolute;
+	margin:7px;
+	 }
 	 .new{
 	 position:absolute;
-	 left:5px;
+	 left:0px;
 	 top:30px;
 	 }
-	 .centered{
-	 position:absolute;}
+	 .clearr{
+	  clear:both;
+	 }
+	 .foot{
+	 width:99.5%;
+	 height:50px;
+	  background-image:url('foggy3.jpg')
+	  }
    </style>
   </head>
     <body>
+	<div class="container">
 	<div clas="one">
-	 <img src="autumn.jpg" style="height:240px; width:100%">
+	 <img src="autumn.jpg" style="height:240px; width:99.5%">
 	   <div class="dh">
 	    <h1>N A T U R E</h1>
 	    <p style="padding-bottom:30px">The Phyisical Universe</p>
@@ -65,32 +80,32 @@
 	</div>
   </div>
     <div class="asc">
-	<div style="width:55%;height:30px; background-color:#330000; padding-left:160px;margin-left:5px">
-	<h3 style="color:white;">See Also</h3>
+	<div class="seealso" style=" background-color:#330000;color:white; text-align:left ; padding-left:2px">
+	See Also
 	</div>
 	<div class="new">
-	<ul style="type: disc ; color:#1a75ff">
-	<h4>Science</h4>
-	  <li><a href="http://www.cs.washington.edu/education/courses/cse190m/CurrentQtr/staff.shtml">natural history</a></li>
-	  <li><a href="http://www.cs.washington.edu/education/courses/cse190m/CurrentQtr/staff.shtml">natural philsophy</a></li>
+	<ul style="type:square ; color:#1a75ff">
+	<h4>Science :</h4>
+	  <li><a href="http://www.cs.washington.edu/education/courses/cse190m/CurrentQtr/staff.shtml" target="framename">Natural history</a></li>
+	  <li><a href="http://www.cs.washington.edu/education/courses/cse190m/CurrentQtr/staff.shtml">Natural philsophy</a></li>
 	</ul>
-	<ul style="type: disc ; color:#1a75ff">
-	<h4 >Philosophy</h4>
-	  <li><a href="http://www.cs.washington.edu/education/courses/cse190m/CurrentQtr/staff.shtml">mother nature</a></li>
-	  <li><a href="http://www.cs.washington.edu/education/courses/cse190m/CurrentQtr/staff.shtml">naturation</a></li>
+	<ul style="type:square ; color:#1a75ff">
+	<h4 >theory:</h4>
+	  <li><a href="http://www.cs.washington.edu/education/courses/cse190m/CurrentQtr/staff.shtml">Mother nature</a></li>
+	  <li><a href="http://www.cs.washington.edu/education/courses/cse190m/CurrentQtr/staff.shtml">Naturation</a></li>
 	</ul>
-	<ul style="type: disc ; color:#1a75ff">
-	<h4>Orgnizations</h4>
-	  <li><a href="http://www.cs.washington.edu/education/courses/cse190m/CurrentQtr/staff.shtml">nature consversy</a></li>
-	  <li><a href="http://www.cs.washington.edu/education/courses/cse190m/CurrentQtr/staff.shtml">nature detectives</a></li>
+	<ul style="type:square ; color:#1a75ff">
+	<h4>cells:</h4>
+	  <li><a href="http://www.cs.washington.edu/education/courses/cse190m/CurrentQtr/staff.shtml">Natura consversy</a></li>
+	  <li><a href="http://www.cs.washington.edu/education/courses/cse190m/CurrentQtr/staff.shtml">Nature detectives</a></li>
 	</ul>
 	</div>
 	</div>
-  <footer>
-  <img src="foggy.jpg" style="height:100px; width:100%">
-  <div class="centered"><p>© copyright 2008 wikipedia</p></div>
-  </footer>
+	<div class="clearr"></div>
+  <div class="foot">
+  <div style="text-align:center ; color:white; padding-top:15px ">© copyright 2008 wikipedia</div>
+  </div>
   
-
+</div>
 	</body>
 </html>
